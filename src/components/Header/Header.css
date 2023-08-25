@@ -1,0 +1,112 @@
+.topnav {
+    overflow: hidden;
+    background-color: transparent;
+    transition: all 0.5s cubic-bezier(.25, .8, .25, 1);
+    cursor: pointer;
+    z-index: 1;
+}
+
+.topnav:hover {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.topnav .row {
+    justify-content: center;
+}
+
+.topnav .title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    margin-bottom: 0;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    padding: 10px 16px;
+}
+
+.topnav .link {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.topnav .link:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.topnav .link.active {
+    color: black;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav .link:not(:first-child) {
+        display: none;
+    }
+    .topnav .link.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .topnav.responsive {
+        position: relative;
+    }
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive .link {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+.carousel .carousel-slider {
+    z-index: 0;
+}
+
+.slider {
+    height: auto !important;
+}
+
+.carousel .control-dots {
+    bottom: 90px !important;
+}
+
+.slide .container-img {
+    margin: 0 auto !important;
+}
+
+.carousel .slide img {
+    max-height: 100%;
+    width: 90% !important;
+}
+
+.thumbs {
+    display: none !important;
+}
+
+.carousel.carousel-slider .control-prev::before {
+    font-family: "Material Icons" !important;
+    content: "\e5cb" !important;
+    border: 0 !important;
+    color: black !important;
+}
+
+.carousel.carousel-slider .control-next::before {
+    font-family: "Material Icons" !important;
+    content: "\e5cc" !important;
+    border: 0 !important;
+    color: black !important;
+}
